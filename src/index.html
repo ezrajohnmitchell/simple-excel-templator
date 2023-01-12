@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>webpack starterkit</title>
-  <meta name="description" content="A light foundation for your next frontend project based on webpack.">
-</head>
-<body>
-  <img src="images/webpack.png" alt="Webpack logo">
-  <h1>webpack starter</h1>
-  <p>✨ A lightweight foundation for your next webpack based frontend project.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Excel template filler</title>
+    <meta
+      name="description"
+      content="A light foundation for your next frontend project based on webpack."
+    />
+  </head>
+  <body>
+    <div id="error"></div>
+    <div class="file">
+      <label for="template">Upload template: </label>
+      <input type="file" id="template" accept=".xlsx" />
+    </div>
+    <div class="file">
+      <label for="data">Upload csv: </label>
+      <input type="file" id="data" accept=".csv" />
+    </div>
+    <button onclick="generate()">Generate File</button>
+  </body>
 </html>

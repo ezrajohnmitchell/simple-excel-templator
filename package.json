@@ -1,7 +1,7 @@
 {
-  "name": "webpack-starter",
+  "name": "Excel template filler",
   "version": "1.0.0",
-  "description": "A light foundation for your next frontend project based on webpack.",
+  "description": "Small script to fill excel docs with csv files",
   "scripts": {
     "lint": "npm run lint:styles; npm run lint:scripts",
     "lint:styles": "stylelint src",
@@ -10,8 +10,7 @@
     "start": "webpack serve --config webpack/webpack.config.dev.js"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wbkd/webpack-starter.git"
+    "type": "git"
   },
   "keywords": [
     "webpack",
@@ -21,11 +20,8 @@
     "javascript",
     "webdev"
   ],
-  "author": "webkid.io",
+  "author": "Ezra Mitchell",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wbkd/webpack-starter/issues"
-  },
   "devDependencies": {
     "@babel/core": "^7.20.5",
     "@babel/eslint-parser": "^7.19.1",
@@ -58,6 +54,9 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
-    "core-js": "^3.26.1"
+    "core-js": "^3.26.1",
+    "d3": "^7.8.1",
+    "exceljs": "^4.3.0",
+    "file-saver": "^2.0.5"
   }
 }
