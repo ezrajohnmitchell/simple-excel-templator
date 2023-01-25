@@ -45,10 +45,7 @@ async function generate() {
 
     template.eachRow((row, rowNum) => {
       row.eachCell((cell, cellNum) => {
-        console.log(cell.value);
-        console.log(nameKeys);
         if (nameKeys.includes(cell.value)) {
-          console.log("matched");
           keytoTemplatePos.set(cell.value, { x: rowNum, y: cellNum });
         }
       });
@@ -59,8 +56,11 @@ async function generate() {
     //generate copies of template and fill with row data
     csv.forEach((value, index) => {
       const generatedSheet = workbook.addWorksheet();
-      generatedSheet.model = template.model;
-      generatedSheet.name = "" + index + 1;
+
+      generatedSheet.model = Object.assign(template.model, {
+        mergeCells: template.model.merges,
+      });
+      generatedSheet.name = "" + (index + 1);
 
       validKeys.forEach((key) => {
         let pos = keytoTemplatePos.get(key);

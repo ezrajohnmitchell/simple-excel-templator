@@ -1,4 +1,0 @@
-body{color:#6a5acd;background-color:#191e26;font-family:sans-serif;padding:2em;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:1em;font-size:1em}.file{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;gap:1em}button{-ms-flex-item-align:start;align-self:start;padding:0.5em;background-color:#6a5acd;color:white;border:none;border-radius:5px}button:hover{cursor:pointer}button:active{background-color:#3d337a;color:gray}#error{display:none;color:lightcoral}
-
-
-/*# sourceMappingURL=app.c5c27b1d.css.map*/
